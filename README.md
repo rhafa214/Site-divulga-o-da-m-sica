@@ -1,11 +1,34 @@
-<div align="center">
+# Quebranta-me | Missão Sedentos
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Microsite oficial de lançamento da música "Quebranta-me". Uma experiência visual cinematográfica, artesanal e contemplativa para convidados e divulgação da campanha musical.
 
-  <h1>Built with AI Studio</h2>
+## Requisitos
+- Node.js (v18+)
+- npm ou yarn
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Scripts Disponíveis
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+- `npm install` - Instala as dependências.
+- `npm run dev` - Inicia o servidor de desenvolvimento.
+- `npm run build` - Compila o projeto para produção.
+- `npm run preview` - Visualiza o build de produção localmente.
 
-</div>
+## Configuração de Conteúdo
+
+Todo o conteúdo dinâmico está centralizado em `src/config/siteConfig.ts`. 
+
+- **Data de lançamento:** Adicione a data em `launchDate` (ex: `"2026-10-30T23:59:00"`). A contagem regressiva aparecerá automaticamente.
+- **Pré-save:** Insira o link da campanha em `preSaveUrl`. O botão passará de "Em breve" para clicável.
+- **Áudio:** 
+  - Arquivo: `public/audio/quebranta-me.mp3`
+  - Configuração: `audioSrc: publicUrl("audio/quebranta-me.mp3")`
+- **Imagens:** As imagens da campanha devem ser enviadas para a pasta `public/assets/` substituindo os placeholders atuais.
+
+## Deploy no GitHub Pages
+
+O projeto já está configurado com `base: "./"` no arquivo `vite.config.ts`, sendo totalmente compatível com subdiretórios no GitHub Pages.
+
+Para publicar:
+1. Execute `npm run build`.
+2. O código otimizado será gerado na pasta `dist/`.
+3. Suba o conteúdo da pasta `dist/` para a branch `gh-pages` (ou equivalente) do seu repositório, garantindo que o caminho base está adequado.

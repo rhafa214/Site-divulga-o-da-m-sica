@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-wine-deep: #3A0D12;
+  --color-wine-dark: #21080B;
+  --color-cream-aged: #E6D3B2;
+  --color-orange-burnt: #B85D16;
+  --color-red-earthy: #8F1D17;
+  --color-black-warm: #120B0A;
+  --color-white-off: #F1EAE0;
+  
+  --font-title: 'Bebas Neue', sans-serif;
+  --font-quote: 'Cormorant Garamond', serif;
+  --font-body: 'Montserrat', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  body {
+    @apply bg-wine-dark text-cream-aged font-body antialiased;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.02'/%3E%3C/svg%3E");
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-title tracking-wide;
+  }
+}
+
+@layer utilities {
+  @keyframes fireGlow {
+    0% {
+      opacity: 0.3;
+      transform: scale(0.95) translateY(2%);
+    }
+    100% {
+      opacity: 0.7;
+      transform: scale(1.05) translateY(-2%);
+    }
+  }
+
+  @keyframes heatLight {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0.25;
+    }
+  }
+
+  .animate-fire-glow {
+    animation: fireGlow 4s ease-in-out infinite alternate;
+    transform-origin: bottom center;
+  }
+
+  .animate-heat-light {
+    animation: heatLight 3.5s ease-in-out infinite alternate;
+  }
+}
+
+.text-shadow-sm {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.text-shadow-md {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
