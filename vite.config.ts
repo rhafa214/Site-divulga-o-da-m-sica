@@ -5,7 +5,7 @@ import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
   return {
-    base: '/quebranta-me-missao-sedentos/',
+    base: '/Site-divulga-o-da-m-sica/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
