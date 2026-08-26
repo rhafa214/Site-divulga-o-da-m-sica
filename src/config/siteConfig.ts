@@ -1,4 +1,5 @@
-export const publicUrl = (path: string) => path;
+export const publicUrl = (path: string) =>
+  `${import.meta.env.BASE_URL}${path.replace(/^\/+/, "")}`;
 
 export const siteConfig = {
   songTitle: "Quebranta-me",
@@ -9,10 +10,10 @@ export const siteConfig = {
   officialSongUrl: "",
   instagramUrl: "https://instagram.com/missaosedentos_",
   images: {
-    hero: "assets/arte-principal-quero-queimar.png",
-    typographic: "assets/arte-quebranta-me.png",
-    poster: "assets/arte-clara-coracao.png",
-    logo: "assets/logo-missao-sedentos.png",
-    audioCover: "assets/capa-oficial-quebranta-me.png"
+    hero: publicUrl("assets/arte-principal-quero-queimar.png"),
+    typographic: publicUrl("assets/arte-quebranta-me.png"),
+    poster: publicUrl("assets/arte-clara-coracao.png"),
+    logo: publicUrl("assets/logo-missao-sedentos.png"),
+    audioCover: publicUrl("assets/capa-oficial-quebranta-me.png")
   }
 };
