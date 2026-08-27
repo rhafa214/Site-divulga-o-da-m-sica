@@ -8,11 +8,12 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[100svh] flex flex-col justify-center items-center overflow-hidden pt-24 pb-24 lg:pb-12">
-      {/* Background with slight warm light and texture */}
-      <div className="absolute inset-0 bg-wine-dark -z-10">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80vw] h-[80vw] max-w-[800px] max-h-[800px] bg-orange-burnt/10 rounded-full blur-[100px] mix-blend-screen pointer-events-none" />
-      </div>
+    <section className="relative min-h-[100svh] flex flex-col justify-center items-center overflow-visible py-24">
+      {/* Fundo da Seção: Gradiente Radial Contínuo */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--color-wine-deep)_0%,transparent_80%)] -z-10" />
+
+      {/* Brilho vermelho/laranja queimado sutil no fundo (holofote orgânico) */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90vw] h-[90vw] max-w-[900px] max-h-[900px] bg-[radial-gradient(circle,rgba(184,93,22,0.08)_0%,rgba(143,29,23,0.05)_40%,transparent_70%)] pointer-events-none -z-10" />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-16 flex-1">
         
@@ -21,7 +22,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, ease: "easeOut" }}
-          className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2"
+          className="w-full lg:w-1/2 flex justify-center order-1 lg:order-2 relative"
         >
           <AnimatedHeroArtwork src={siteConfig.images.hero} alt="Arte principal do lançamento Quero Queimar" />
         </motion.div>
@@ -51,18 +52,6 @@ export function Hero() {
           </button>
         </motion.div>
       </div>
-
-      {/* Scroll indicator */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1.2, duration: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-cream-aged/50 cursor-pointer"
-        onClick={scrollToSong}
-      >
-        <span className="text-xs uppercase tracking-widest">Rolar</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-cream-aged/50 to-transparent" />
-      </motion.div>
     </section>
   );
 }

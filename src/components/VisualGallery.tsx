@@ -2,7 +2,7 @@ import { siteConfig } from '../config/siteConfig';
 
 export function VisualGallery() {
   return (
-    <section className="py-14 sm:py-24 lg:py-32 bg-wine-dark border-t border-wine-deep/40">
+    <section className="py-14 sm:py-24 lg:py-32  border-t border-wine-deep/40">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div className="text-center mb-10 sm:mb-16 lg:mb-24">

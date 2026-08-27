@@ -38,7 +38,7 @@ export function Countdown() {
 
   if (!hasDate) {
     return (
-      <section className="py-8 sm:py-16 bg-wine-dark text-center border-b border-wine-deep/30">
+      <section className="py-8 sm:py-16  text-center border-b border-wine-deep/30">
         <div className="max-w-4xl mx-auto px-4">
           <p className="text-sm sm:text-base text-cream-aged/50 uppercase tracking-[0.2em]">
             Data de lançamento em breve
@@ -49,7 +49,7 @@ export function Countdown() {
   }
 
   return (
-    <section className="py-14 sm:py-24 lg:py-32 bg-wine-dark relative overflow-hidden text-center">
+    <section className="py-14 sm:py-24 lg:py-32  relative overflow-hidden text-center">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-wine-deep/30 via-wine-dark to-wine-dark -z-10" />
       
       <div className="max-w-4xl mx-auto px-4">

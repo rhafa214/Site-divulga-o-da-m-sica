@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 
 export function MissionSignature() {
   return (
-    <section className="py-10 sm:py-16 bg-wine-dark border-t border-wine-deep/40 text-center flex flex-col items-center justify-center relative overflow-hidden">
+    <section className="py-10 sm:py-16  border-t border-wine-deep/40 text-center flex flex-col items-center justify-center relative overflow-hidden">
       {/* Subtle background glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-24 bg-orange-burnt/10 rounded-full blur-[60px] pointer-events-none" />
       
