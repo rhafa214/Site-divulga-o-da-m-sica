@@ -14,6 +14,6 @@ export const siteConfig = {
     typographic: publicUrl("assets/arte-quebranta-me.png"),
     poster: publicUrl("assets/arte-clara-coracao.png"),
     logo: publicUrl("assets/logo-missao-sedentos.png"),
-    audioCover: publicUrl("assets/capa-oficial-quebranta-me.png")
+    audioCover: publicUrl("assets/capa-quebranta-me.png")
   }
 };
