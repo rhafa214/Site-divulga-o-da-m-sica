@@ -25,10 +25,11 @@ export default function App() {
       <main className="relative z-10">
         <Hero />
         <WelcomeBlock />
+        <Countdown variant="compact" />
         <AudioPlayer />
-        <Countdown />
         <VisualGallery />
         <GuestSection />
+        <Countdown variant="featured" />
         <PreSaveSection />
         <InstagramSection />
         <MissionSignature />

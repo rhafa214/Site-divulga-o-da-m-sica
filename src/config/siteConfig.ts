@@ -4,7 +4,8 @@ export const publicUrl = (path: string) =>
 export const siteConfig = {
   songTitle: "Quebranta-me",
   artistName: "Missão Sedentos",
-  launchDate: null as string | null,
+  releaseDate: "2026-09-18T00:00:00-03:00",
+  launchDate: "2026-09-18T00:00:00-03:00",
   audioSrc: publicUrl("audio/quebranta-me.mp3"),
   preSaveUrl: "INSERIR_LINK_REAL_AQUI",
   officialSongUrl: "",
