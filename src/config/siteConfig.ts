@@ -12,8 +12,6 @@ export const siteConfig = {
   instagramUrl: "https://instagram.com/missaosedentos_",
   images: {
     hero: publicUrl("assets/arte-principal-quero-queimar.png"),
-    typographic: publicUrl("assets/arte-quebranta-me.png"),
-    poster: publicUrl("assets/arte-clara-coracao.png"),
     logo: publicUrl("assets/logo-missao-sedentos.png"),
     audioCover: publicUrl("assets/capa-quebranta-me.png")
   }
