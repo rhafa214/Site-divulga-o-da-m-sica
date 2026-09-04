@@ -89,6 +89,8 @@ export function AudioPlayer() {
                 src={coverSrc} 
                 alt={imageFailed ? "" : `Capa do single ${siteConfig.songTitle}`}
                 className={`w-full h-full object-contain ${imageFailed ? 'opacity-0' : 'opacity-100'}`}
+                loading="lazy"
+                decoding="async"
                 onError={() => {
                   if (coverSrc !== siteConfig.images.hero) {
                     setCoverSrc(siteConfig.images.hero);

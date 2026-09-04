@@ -13,6 +13,8 @@ export function Footer() {
             src={siteConfig.images.logo} 
             alt="Logotipo Missão Sedentos" 
             className="w-full h-full object-contain"
+            loading="lazy"
+            decoding="async"
             onError={(e) => {
               (e.target as HTMLImageElement).style.display = 'none';
               (e.target as HTMLImageElement).parentElement!.innerText = 'MS';

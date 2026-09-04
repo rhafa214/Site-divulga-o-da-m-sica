@@ -17,6 +17,8 @@ export function AnimatedHeroArtwork({ src, alt }: { src: string; alt: string }) 
           src={src} 
           alt={alt} 
           className="w-full h-auto object-contain block relative z-10"
+          fetchPriority="high"
+          decoding="async"
         />
         
       </div>

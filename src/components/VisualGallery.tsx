@@ -15,7 +15,7 @@ const WALLPAPERS: WallpaperItem[] = [
   {
     id: 'quero-queimar',
     title: 'Quero Queimar',
-    previewSrc: publicUrl('wallpapers/wallpaper_01_quero_queimar.png'),
+    previewSrc: publicUrl('wallpapers/previews/wallpaper_01_quero_queimar.webp'),
     downloadSrc: publicUrl('wallpapers/wallpaper_01_quero_queimar.png'),
     filename: 'wallpaper_01_quero_queimar.png',
     ariaLabel: 'Baixar wallpaper Quero Queimar para celular'
@@ -23,7 +23,7 @@ const WALLPAPERS: WallpaperItem[] = [
   {
     id: 'quebranta-me',
     title: 'Quebranta-me',
-    previewSrc: publicUrl('wallpapers/wallpaper_02_quebranta_me.png'),
+    previewSrc: publicUrl('wallpapers/previews/wallpaper_02_quebranta_me.webp'),
     downloadSrc: publicUrl('wallpapers/wallpaper_02_quebranta_me.png'),
     filename: 'wallpaper_02_quebranta_me.png',
     ariaLabel: 'Baixar wallpaper Quebranta-me para celular'
@@ -31,7 +31,7 @@ const WALLPAPERS: WallpaperItem[] = [
   {
     id: 'quero-queimar-claro',
     title: 'Quero Queimar — Claro',
-    previewSrc: publicUrl('wallpapers/wallpaper_03_quero_queimar_claro.png'),
+    previewSrc: publicUrl('wallpapers/previews/wallpaper_03_quero_queimar_claro.webp'),
     downloadSrc: publicUrl('wallpapers/wallpaper_03_quero_queimar_claro.png'),
     filename: 'wallpaper_03_quero_queimar_claro.png',
     ariaLabel: 'Baixar wallpaper Quero Queimar — Claro para celular'

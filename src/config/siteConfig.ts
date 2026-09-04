@@ -13,6 +13,6 @@ export const siteConfig = {
   images: {
     hero: publicUrl("assets/arte-principal-quero-queimar.png"),
     logo: publicUrl("assets/logo-missao-sedentos.png"),
-    audioCover: publicUrl("assets/capa-quebranta-me.png")
+    audioCover: publicUrl("assets/capa-quebranta-me-player.webp")
   }
 };
