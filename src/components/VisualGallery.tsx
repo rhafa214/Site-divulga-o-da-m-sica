@@ -85,13 +85,13 @@ export function VisualGallery() {
               transition={{ duration: 0.7, delay: index * 0.15, ease: 'easeOut' }}
               className="bg-wine-deep/25 border border-cream-aged/10 rounded-xl p-5 sm:p-6 flex flex-col justify-between items-center text-center backdrop-blur-sm shadow-xl shadow-black-warm/50 hover:border-orange-burnt/30 transition-all duration-300 group"
             >
-              {/* Moldura da Prévia Vertical Proporção 9:16 Completa com object-contain */}
+              {/* Prévia Vertical sem bordas ou molduras pretas */}
               <div className="w-full flex justify-center mb-6">
-                <div className="relative w-full max-w-[200px] sm:max-w-[220px] aspect-[9/16] rounded-lg overflow-hidden border border-cream-aged/15 shadow-md shadow-black-warm/60 bg-black-warm flex items-center justify-center p-1">
+                <div className="relative w-full max-w-[200px] sm:max-w-[220px] aspect-[9/16] rounded-lg overflow-hidden flex items-center justify-center">
                   <img 
                     src={item.previewSrc} 
                     alt={`Prévia do wallpaper ${item.title}`}
-                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-contain rounded-lg transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"
                     decoding="async"
                   />
