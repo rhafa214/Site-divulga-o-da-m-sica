@@ -11,6 +11,7 @@ import { Countdown } from './components/Countdown';
 import { VisualGallery } from './components/VisualGallery';
 import { GuestSection } from './components/GuestSection';
 import { PreSaveSection } from './components/PreSaveSection';
+import { PlatformsSection } from './components/PlatformsSection';
 import { InstagramSection } from './components/InstagramSection';
 import { MissionSignature } from './components/MissionSignature';
 import { Footer } from './components/Footer';
@@ -31,6 +32,7 @@ export default function App() {
         <GuestSection />
         <Countdown variant="featured" />
         <PreSaveSection />
+        <PlatformsSection />
         <InstagramSection />
         <MissionSignature />
       </main>

@@ -10,6 +10,10 @@ export const siteConfig = {
   preSaveUrl: "INSERIR_LINK_REAL_AQUI",
   officialSongUrl: "",
   instagramUrl: "https://instagram.com/missaosedentos_",
+  streaming: {
+    spotify: "https://open.spotify.com/intl-pt/artist/7rFSEkoNPMpgkBk8CTjwFu?si=nHDhHrI7QkimEfrLVTkx2g",
+    youtube: "https://www.youtube.com/@MissaoSedentos"
+  },
   images: {
     hero: publicUrl("assets/arte-principal-quero-queimar.png"),
     logo: publicUrl("assets/logo-missao-sedentos.png"),
